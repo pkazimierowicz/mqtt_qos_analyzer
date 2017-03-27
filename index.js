@@ -1,13 +1,16 @@
 const jsonfile = require('jsonfile')
 const stats = require("stats-lite");
+const commandLineArgs = require("command-line-args");
 const mqtt = require("mqtt");
 const client = mqtt.connect("mqtt://127.0.0.1:1883");
+
+const options = commandLineArgs([{ name: "sub_qos", defaultOption: 0, type: Number }]);
 
 let devices = {};
 
 client.on("connect", () => {
     client.subscribe("qos_testing/#", {
-        qos: 0
+        qos: options.sub_qos
     });
 });
 

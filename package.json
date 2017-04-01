@@ -1,0 +1,25 @@
+{
+  "name": "mqtt_qos_analyzer",
+  "version": "1.0.0",
+  "description": "Usage:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkazimierowicz/mqtt_qos_analyzer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkazimierowicz/mqtt_qos_analyzer/issues"
+  },
+  "homepage": "https://github.com/pkazimierowicz/mqtt_qos_analyzer#readme",
+  "dependencies": {
+    "command-line-args": "^4.0.2",
+    "jsonfile": "^2.4.0",
+    "mqtt": "^2.5.0",
+    "stats-lite": "^2.0.4"
+  }
+}
